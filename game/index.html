@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sizzle &amp; Serve — a tiny kitchen rush game</title>
+<style>
+  html, body { margin: 0; padding: 0; background: #241a12; height: 100%; }
+  body { display: flex; align-items: center; justify-content: center; }
+  canvas { display: block; width: 1280px; height: 800px; background: #f7e8d0;
+    box-shadow: 0 0 0 4px #3a2a18, 0 18px 60px rgba(0,0,0,.6); border-radius: 6px; }
+  #hint { position: fixed; left: 12px; bottom: 8px; color: #cbb894; font: 12px system-ui, sans-serif; }
+</style>
+</head>
+<body>
+<canvas id="game" width="1280" height="800"></canvas>
+<div id="hint">Click the counter (or press 1–8) to stack ingredients · Space serves · Backspace trashes · Enter starts</div>
+<script type="module" src="src/main.js"></script>
+</body>
+</html>
